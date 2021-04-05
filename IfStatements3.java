@@ -3,7 +3,7 @@ package week2;
 public class IfStatements3 {
 public static void main(String[] args) {
 	
-	int month = 13;
+	int month = 2;
 
 	// 30 days: 4,6,9,11
 	boolean month28Days = month == 2;
@@ -41,7 +41,7 @@ public static void main(String[] args) {
 		}else if(day == 5) {
 			name = "Friday";
 		}else if(day == 6) {
-			name = "Sdaturday";
+			name = "Saturday";
 		}else {
 			name = "Sunday";
 		}
