@@ -1,18 +1,17 @@
-package day11_loops;
+package Loops;
 
 public class DoWhileLoop {
 
 	public static void main(String[] args) {
 		
+		boolean b=false;
 		int i=1;
 		
 		do {
-			
-			System.out.println(i);
 			i++;
-		}while(i<=10);
-		
-
+			System.out.println(b);
+		}while(b=!b);
+		System.out.println(b);
+		System.out.println(i);
 	}
-
 }
