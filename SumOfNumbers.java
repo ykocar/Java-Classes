@@ -1,16 +1,16 @@
-package day13_Methods;
+package Book_IntroductionToJava;
 
 public class SumOfNumbers {
 
 	public static void main(String[] args) {
 		
-		SumOfNumbers();
+		int sum = 0 ;
+        for(int i = 1 ; i <= 9 ; i++){
+            sum = sum + i;
+              
+		}
+            System.out.println(sum);
+	}
 
 	}
-	public static void SumOfNumbers() {
-	
-		int num1=1,num2=2,num3=5;
-		int sum = (num1+num2+num3);
-		System.out.println(sum);
-}
-}
+
