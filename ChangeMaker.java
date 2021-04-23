@@ -1,27 +1,43 @@
-package day18_readingUserInput;
+package Friday;
 
 import java.util.Scanner;
 
 public class ChangeMaker {
 
 	public static void main(String[] args) {
+	
+	int number=0;
+	int max=0;
+	int min=0;
+	
 		
 		//Enter a whole number from 1-99, and I will find a 
 		//	combination of coins that equals that amount  of change
 		
-		Scanner keyboard = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Enter the amount of change:");
 		int attempt = 0;
-			
+		
 			
 			do {
-				int userAmount = keyboard.nextInt();
+				int userAmount = input.nextInt();
 				
 				if(userAmount>=1 && userAmount<=99) {
 					changeMaker(userAmount);
 					break;
 				}else {
+					for(int i=1;i<=5;i++) {
+						System.out.println("Enter a number: ");
+						number = input.nextInt();
+						
+						if(number>max) {
+							max=number;
+						}
+						if(number<min) {
+							min=number;
+						}
+						}
 					attempt++;
 					if(attempt==3) {
 							System.out.println("Sorry no more attempt");

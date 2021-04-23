@@ -1,21 +1,26 @@
-package day18_readingUserInput;
-
-import java.util.Scanner;
+package Friday;
 
 public class SumOfNumbers {
 
 	public static void main(String[] args) {
-
-		Scanner keyboard = new Scanner(System.in);
-		System.out.println("enter first number:");
 		
-		int num1 = keyboard.nextInt();
-		System.out.println("enter second number:");
-		int num2 = keyboard.nextInt();
-		System.out.println("enter third number:");
-		int num3 = keyboard.nextInt();
-		
-		System.out.print("sum of three number is: " + (num1+num2+num3));
+		int sum = 0 ;
+        for(int i = 1 ; i <= 9 ; i++){
+            sum = sum + i;
+            System.out.println("sum is " + sum);
+		}
+            System.out.println("sum is " + sum);
+            
+            /*
+            int sum = 0, i = 1;
+			while (i <=9) {
+			sum = sum + i;
+			i++;
+			}
+			System.out.println("sum is " + sum);
+             */
 	}
 
-}
+	
+	}
+
