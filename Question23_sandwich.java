@@ -13,7 +13,7 @@ public class Question23_sandwich {
 		System.out.println(str1);
 		System.out.println(str2);
 		
-		System.out.println(sandwich.substring(7, str2));
+		System.out.println(sandwich.substring(str1+word.length(), str2));
 		
 		int count = 0;
 		while(sandwich.contains(word)) {
