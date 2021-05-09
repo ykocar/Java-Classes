@@ -1,4 +1,4 @@
-package week6;
+package week7;
 
 import java.util.Arrays;
 
@@ -11,9 +11,9 @@ public class Task2_MoveZeros {
 
 	 int count = 0;
 
-	    for (int j = 0; j < array.length; j++) {
-	        if (array[j] != 0) {
-	            array[count++] = array[j];
+	    for (int i = 0; i < array.length; i++) {
+	        if (array[i] != 0) {
+	            array[count++] = array[i];
 	        }
 	    }
 	    
