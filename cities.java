@@ -17,7 +17,7 @@ public class cities {
 
 		System.out.println(cities.toString());
 
-		// Print each city by using for-each loop seperated by space
+		// Print each city by using for-each loop separated by space
 
 		for (String city : cities) {
 			System.out.println(city + " ");

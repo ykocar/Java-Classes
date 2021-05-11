@@ -18,11 +18,13 @@ public class removeInteger {
 		nums.add(17);
 		nums.add(50);
 
-		System.out.println(nums);
+		System.out.println(nums.toString()); //only (nums) is also ok!
 
-		nums.remove(4); // removes the specifid index number from the list
+		nums.remove(4); // removes the specified INDEX NUMBER from the list
 
 		System.out.println(nums);
+		
+		System.out.println("--------------------");
 
 		Integer n1 = new Integer(4); // converting primitive to object
 		System.out.println(n1);

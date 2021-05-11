@@ -27,7 +27,7 @@ public class shoppingList {
 
 		System.out.println(shoppingList.get(0) + " " + shoppingList.get(shoppingList.size() - 1));
 
-		shoppingList.remove("paper towel");
+		shoppingList.remove("paper towel"); // index number OR an element
 
 		System.out.println(shoppingList.toString());
 

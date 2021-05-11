@@ -19,14 +19,14 @@ public class ArrayListIntro {
 		names.add("Evan");
 		names.add("Mary");
 		
-		System.out.println(names);
+		System.out.println(names.toString());
 		
 		nums.add(99);
 		nums.add(656);
 		nums.add(100);
 		nums.add(new Integer("100"));
 		
-		System.out.println(nums);
+		System.out.println(nums.toString());
 		
 		//Reading from arrayList
 		
