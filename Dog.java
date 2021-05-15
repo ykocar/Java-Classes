@@ -1,24 +1,30 @@
-package day16_ClassAndObject;
+package week8;
 
 public class Dog {
 
-	//Class is a blueprint and has common properties and methods 
-	
-	String breed;
-	int age;
-	String color;
-	String name;
-	
-	public void barking() {
+	public String name, breed, gender, color;
+	public int age;
+
+	public Dog() {
+
+	}
+
+	public Dog(String name, String breed, String gender, String color, int age) {
+		this.name = name;
+		this.breed = breed;
+		this.color = color;
+		this.gender = gender;
+		this.age = age;
+
+	}
+
+	public void bark() {
 		System.out.println(name + " is barking");
 	}
-	
-	public void hungry() {
-		System.out.println(name + " is hungry");
-	}
-	
-	public void sleeping() {
-		System.out.println(name + " is sleeping");
 
-}
+	public String toString() {
+		return "Dog [name=" + name + ", breed=" + breed + ", gender=" + gender + ", color=" + color + ", age=" + age
+				+ "]";
+	}
+
 }
