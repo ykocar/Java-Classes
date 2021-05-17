@@ -1,10 +1,8 @@
 package week8;
-
-public class ArrayListPractice4 {
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+
 
 public class ArrayListPractice4 {
 	public static void main(String[] args) {
