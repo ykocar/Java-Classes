@@ -1,42 +1,32 @@
-package day17_classObject_Part2;
+package day33_Class_Objects_Constructors;
 
 public class BankAccount {
 
+	// instance variable
 	double balance;
-	String accountHolder;
-	int accountNumber;
-	
-	public void deposit(double amount) {   
-		
-		System.out.println("depositing $" + amount + " to " + accountNumber);
-		balance+=amount;
+
+	// this constructor sets the starting balance to 0.0
+	public BankAccount() {
+		balance = 0.0;
 	}
-	
-	public void withdraw(double amount) {
-		
-		System.out.println("Withdrawing $" + amount + " from " + accountNumber);
-		balance-=amount;
-		
-		if(balance<0) {
-			balance-=35;
-		}
+
+	// this constructor sets the starting balance to the value passes as an argument
+	public BankAccount(double startBalance) {
+		balance = startBalance;
 	}
-	
-	public void showBalance() {
-		System.out.println("---------------");
-		System.out.println("acountHolder: " + accountHolder);
-		System.out.println("accountNumber: " + accountNumber);
-		System.out.println("balance: $ " + balance);
-		System.out.println("---------------");
-		
+
+	// this constructor sets the starting balance to the value in the string
+	// argument
+	public BankAccount(String str) {
+		this.balance = Double.parseDouble(str);
 	}
-	
-	public void charge(double price,String item) {
-		if(balance>=price) {
-			System.out.println("buying " + item + " for $ " + price + " from " + accountNumber);
-			balance-=price;
-		}else {
-			System.out.println("insufficient funds to purchase " + item + " from " + accountNumber);
-		}
+
+	public void deposit(String str) {
+		balance = balance + Double.parseDouble(str);
 	}
+
+	public double getBalance() {
+		return balance;
+	}
+
 }

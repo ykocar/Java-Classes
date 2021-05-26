@@ -1,45 +1,43 @@
-package day16_ClassAndObject;
+package day33_Class_Objects_Constructors;
 
 public class Car {
-	
-	String make;
+
 	String model;
-	int currentSpeed;
+	String make;
+	int year;
+	double mile;
 	String color;
-	
-	public void printCarInfo() {
-		
 
-		String info = "Car make[" + make + "],model[" + model + "],color[" + color +
-				"],current speed[" + currentSpeed + "]";
-		
-		System.out.println(info);
+	//create Constructor
+	
+	public Car() {
+		model = "Honda";
+		make = "Civic";
+		year = 2020;
+		mile = 5000;
+		color ="Red";
 		
 	}
 	
-	public void showCurrentSpeed(int speedLimit) {
+	public Car(String mo, String ma, int yr, int ml,String cl) {
 		
+		model = mo;
+		make = ma;
+		year = yr;
+		mile = ml;
+		color = cl;
 		
-		if(currentSpeed<=speedLimit) {
-			System.out.println(make + " is driving at " + currentSpeed + " mph,following the speed limit-" + speedLimit);
-		}else {
-			System.out.println(make + " is driving at " + currentSpeed + " mph,over the speed limit-" + speedLimit );
-		}
-	}
-
-	public void drive() {
-		System.out.println(make + " " + model + " is driving..." );
 	}
 	
-	public void accelerate(int mph) {
+	public Car(String model, String make, int year, double mile, String color) {
 		
-		currentSpeed = currentSpeed + mph;
-		
-		
-		
-		
-		
-		
-		
+		this.model = model;
+		this.make = make;
+		this.year = year;
+		this.mile = mile;
+		this.color = color;
 	}
+	
+	
+	
 }

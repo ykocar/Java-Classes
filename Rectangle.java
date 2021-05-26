@@ -1,21 +1,37 @@
-package week4;
+package day33_Class_Objects_Constructors;
 
 public class Rectangle {
 
-	public double width, length;
-	
-	public double area() {
-		
-		return width * length;
+	double length;
+	double width;
+
+	public void getArea() {
+
+		System.out.println(length * width);
 	}
-	
-	public double perimeter() {
-		return 2 * (width+length);
+
+	public Rectangle() {
+		
+		width = 5.4;
+		length = 3.1;
+		//if we create Constructor without parameters, it has fixed values
+
+		// instantiate the object variables
+	}
+
+	public Rectangle(int a, int b) {
+
+	}
+
+	public Rectangle(double a, double b) {
+		
+		length = a;
+		width = b;
+
 	}
 	
 
-	public String toString() {
-		return "Rectangle [width=" + width + ", length=" + length + ", area=" +area()
-		+", perimeter="+perimeter()+"]";
-	}
+	
+	
+
 }
